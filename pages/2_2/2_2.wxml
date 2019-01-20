@@ -1,0 +1,70 @@
+<!--pages/2_2/2_2.wxml-->
+
+<view class="page-2_2">
+  <view class="map">
+    <map 
+      id="myMap"
+      style="width: 100%; height: 682rpx;"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      markers="{{markers}}"
+      covers="{{covers}}"
+      show-location
+    ></map>
+  </view>
+
+
+<view class='container'>
+
+
+    <view class='picker2'>
+     <view class='timepic'>
+
+      <image   mode='aspectFit' src="../../img/time.png"></image>
+           </view>           
+             <picker  mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+   
+              <view class='form-group'>
+      <!-- <input type="text" class="input-text" name="enterdate" placeholder="" value=' {{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}'/> -->
+               <input type="text" class="input-text" name="enterdate" placeholder="" value=' {{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}'/>
+               </view>
+              </picker>
+      
+ 
+
+<view class='l'></view>
+      <view  class='personpic'>
+     <image  src="../../img/person_number.png"></image>
+         </view> 
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <!-- <button class="person">{{array[index]}}</button> -->    {{array[index]}}
+      </picker>
+
+</view>
+
+
+
+<view class='localinput'>
+ <view class='inputpic'>
+ <image   src="../../img/locationinput.png"></image>
+ </view>
+<view class='input2'>
+ <view class='in'>
+  <input class="in-input" type="number" maxlength="11" name="phone" placeholder="请输入手机号" value="{{userInfo.phone}}" />
+ </view>
+ <view class='go'></view>
+
+</view>
+</view>
+<view class='fabu'>
+<button>发布</button></view>
+
+
+
+
+</view>
+
+
+
+</view>
+

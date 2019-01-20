@@ -1,0 +1,86 @@
+/* pages/2_2/2_2.wxss */
+.map{
+  box-sizing: border-box;
+
+  /* //padding: 0 30rpx; */
+}
+.picker2{  
+   position: absolute;
+  left: 61rpx;
+  top: 664rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+   /* //justify-content: space-between; */
+  background-color: rgb(252, 248, 248);
+  width: 634rpx;
+  height: 96rpx;
+ 
+  
+   }
+  .timepic image{
+   
+        margin:30rpx 5rpx 10rpx 50rpx;
+     width: 80rpx;
+    height:80rpx;
+  }
+  .form-group{
+   width: 250rpx; 
+  }
+  .l{
+  border: 3rpx solid rgba(141, 15, 110, 0.267);
+  height: 90rpx;
+}
+   .personpic image{
+
+     width: 80rpx;
+    height:80rpx;
+   margin:30rpx 10rpx 10rpx 30rpx;
+  }
+.localinput{
+   position: absolute;
+  left: 0;
+  top: 780rpx;
+   background-color: ffff;
+  width: 100%;
+  height:200rpx;
+    display: flex;
+  flex-direction: row;
+  align-items: center; 
+ 
+}
+.inputpic{
+  width: 96rpx;
+  height:200rpx;
+}
+.inputpic image{
+    width: 30rpx;
+    height:150rpx;
+    margin:25rpx 0rpx 25rpx 61rpx;
+   
+}
+.input2{
+   width: 642rpx;
+  height:200rpx;
+}
+.in{align-items: center; 
+
+  height:96rpx;
+background-color: rgb(202, 46, 46);
+margin:0rpx 0rpx 8rpx 0rpx;
+}
+.go{
+height:96rpx;
+background-color: rgb(202, 46, 46);
+}
+.fabu{
+   position: absolute;
+  left: 0;
+  top: 999rpx;
+   background-color: rgb(236, 193, 227);
+  width: 100%;
+  height:96rpx;
+
+}
+
+
